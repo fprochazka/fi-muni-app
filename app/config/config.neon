@@ -26,7 +26,7 @@ nette:
 
 
 services:
-	routerFactory: RouterFactory(%productionMode%)
+	routerFactory: App\RouterFactory(%productionMode%)
 	router: @routerFactory::create()
 
 	nette.latte:
