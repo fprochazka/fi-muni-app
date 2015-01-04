@@ -14,7 +14,8 @@
         "php": ">= 5.3.7",
         "nette/nette": "~2.2.0",
         "fprochazka/fi-math": "dev-mathlib",
-        "janmarek/webloader": "dev-master"
+        "janmarek/webloader": "dev-master",
+        "oyejorge/less.php": "~1.7"
     },
     "require-dev": {
         "nette/tester": "~1.0"
