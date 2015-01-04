@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "732824d81f6809ec6d400655a677692d",
+    "hash": "391b857ed15823a588c92df4c49ebca6",
     "packages": [
         {
             "name": "fprochazka/fi-math",
@@ -53,6 +53,86 @@
                 "source": "https://github.com/fprochazka/fi-muni/tree/mathlib"
             },
             "time": "2014-12-10 14:23:06"
+        },
+        {
+            "name": "janmarek/webloader",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/janmarek/WebLoader.git",
+                "reference": "253c81f56eccd30069f912f1f4801e54c58ef164"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/janmarek/WebLoader/zipball/253c81f56eccd30069f912f1f4801e54c58ef164",
+                "reference": "253c81f56eccd30069f912f1f4801e54c58ef164",
+                "shasum": ""
+            },
+            "require": {
+                "nette/application": "~2.2@dev",
+                "nette/di": "~2.2@dev",
+                "nette/utils": "~2.2@dev"
+            },
+            "require-dev": {
+                "jakub-onderka/php-parallel-lint": "~0.7",
+                "latte/latte": "~2.2@dev",
+                "leafo/lessphp": "~0.4",
+                "leafo/scssphp": "~0.1",
+                "mockery/mockery": "0.7.*",
+                "nette/bootstrap": "~2.2@dev",
+                "nette/caching": "~2.2@dev",
+                "nette/component-model": "~2.2@dev",
+                "nette/database": "~2.2@dev",
+                "nette/deprecated": "~2.2@dev",
+                "nette/finder": "~2.2@dev",
+                "nette/forms": "~2.2@dev",
+                "nette/http": "~2.2@dev",
+                "nette/mail": "~2.2@dev",
+                "nette/neon": "~2.2@dev",
+                "nette/php-generator": "~2.2@dev",
+                "nette/reflection": "~2.2@dev",
+                "nette/robot-loader": "~2.2@dev",
+                "nette/safe-stream": "~2.2@dev",
+                "nette/security": "~2.2@dev",
+                "nette/tokenizer": "~2.2@dev",
+                "phpunit/phpunit": "3.7.*",
+                "tracy/tracy": "~2.2@dev"
+            },
+            "suggest": {
+                "leafo/lessphp": "Lessphp is a composer for LESS written in PHP.",
+                "leafo/scssphp": "Scssphp is a composer for SCSS written in PHP."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "WebLoader": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Marek",
+                    "email": "mail@janmarek.net"
+                }
+            ],
+            "description": "Tool for loading or deploying CSS and JS files into web pages",
+            "homepage": "http://addons.nette.org/cs/webloader",
+            "keywords": [
+                "assets",
+                "css",
+                "javascript",
+                "nette",
+                "webloader"
+            ],
+            "time": "2014-10-12 23:50:23"
         },
         {
             "name": "latte/latte",
@@ -1244,7 +1324,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fprochazka/fi-math": 20
+        "fprochazka/fi-math": 20,
+        "janmarek/webloader": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

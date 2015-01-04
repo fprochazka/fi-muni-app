@@ -4,6 +4,10 @@
 # If you don't protect this directory from direct web access, anybody will be able to see your passwords.
 # http://nette.org/security-warning
 #
+extensions:
+	webloader: WebLoader\Nette\Extension
+
+
 parameters:
 
 
@@ -32,3 +36,7 @@ services:
 	nette.latteFactory:
 		setup:
 			- setAutoRefresh(TRUE)
+
+
+includes:
+	- webloader.neon
