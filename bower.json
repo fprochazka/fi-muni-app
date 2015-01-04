@@ -1,0 +1,22 @@
+{
+  "name": "fi-math-app",
+  "version": "0.0.0",
+  "homepage": "https://math.fprochazka.com/",
+  "authors": [
+    "Filip Procházka <filip@prochazka.su>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "nette.ajax.js": "vojtech-dobes/nette.ajax.js#~2.0.0",
+    "nette-forms": "~2.2.4"
+  }
+}
