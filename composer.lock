@@ -4,26 +4,55 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6cfba70340754f9d70db945f5f6090ae",
+    "hash": "732824d81f6809ec6d400655a677692d",
     "packages": [
         {
-            "name": "dg/adminer-custom",
-            "version": "v1.5.0",
+            "name": "fprochazka/fi-math",
+            "version": "dev-mathlib",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dg/adminer-custom.git",
-                "reference": "9365952e11b2b706be94c5000bf032027557a45b"
+                "url": "https://github.com/fprochazka/fi-muni.git",
+                "reference": "edc3ab43553c281f783672fbcb5e7892e368b42b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dg/adminer-custom/zipball/9365952e11b2b706be94c5000bf032027557a45b",
-                "reference": "9365952e11b2b706be94c5000bf032027557a45b",
+                "url": "https://api.github.com/repos/fprochazka/fi-muni/zipball/edc3ab43553c281f783672fbcb5e7892e368b42b",
+                "reference": "edc3ab43553c281f783672fbcb5e7892e368b42b",
                 "shasum": ""
             },
-            "type": "project",
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "Customization for the best database management tool written in PHP, Adminer",
-            "time": "2014-08-05 16:59:07"
+            "require": {
+                "nette/tester": "~1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FiMath\\": "lib/"
+                }
+            },
+            "autoload-dev": {
+                "classmap": [
+                    "tests/"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Filip Procházka",
+                    "homepage": "http://filip-prochazka.com",
+                    "email": "filip@prochazka.su"
+                }
+            ],
+            "description": "Math lib for MUNI FI classes",
+            "support": {
+                "email": "filip@prochazka.su",
+                "issues": "https://github.com/fprochazka/fi-muni/issues",
+                "source": "https://github.com/fprochazka/fi-muni/tree/mathlib"
+            },
+            "time": "2014-12-10 14:23:06"
         },
         {
             "name": "latte/latte",
@@ -998,6 +1027,62 @@
             "time": "2014-11-05 02:05:01"
         },
         {
+            "name": "nette/tester",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/tester.git",
+                "reference": "73e9511cb0bd03efdba398c00e91fac8b22edde7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/tester/zipball/73e9511cb0bd03efdba398c00e91fac8b22edde7",
+                "reference": "73e9511cb0bd03efdba398c00e91fac8b22edde7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "bin": [
+                "Tester/tester"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "Tester/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "http://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "http://nette.org/contributors"
+                }
+            ],
+            "description": "An easy-to-use PHP unit testing framework.",
+            "homepage": "http://nette.org",
+            "keywords": [
+                "nette",
+                "testing",
+                "unit"
+            ],
+            "time": "2014-09-27 10:42:19"
+        },
+        {
             "name": "nette/tokenizer",
             "version": "v2.2.0",
             "source": {
@@ -1155,67 +1240,12 @@
             "time": "2014-11-15 17:22:04"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "nette/tester",
-            "version": "v1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/tester.git",
-                "reference": "73e9511cb0bd03efdba398c00e91fac8b22edde7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/tester/zipball/73e9511cb0bd03efdba398c00e91fac8b22edde7",
-                "reference": "73e9511cb0bd03efdba398c00e91fac8b22edde7",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "bin": [
-                "Tester/tester"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "Tester/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "http://davidgrudl.com"
-                },
-                {
-                    "name": "Nette Community",
-                    "homepage": "http://nette.org/contributors"
-                }
-            ],
-            "description": "An easy-to-use PHP unit testing framework.",
-            "homepage": "http://nette.org",
-            "keywords": [
-                "nette",
-                "testing",
-                "unit"
-            ],
-            "time": "2014-09-27 10:42:19"
-        }
-    ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "fprochazka/fi-math": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
