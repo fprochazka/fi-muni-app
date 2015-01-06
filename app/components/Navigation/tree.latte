@@ -1,0 +1,17 @@
+{block nav|strip}
+
+<div class="navigation" n:inner-block="loop">
+	{default $level = 2, $prefix = 'front.navigation'}
+	<ul class="nav" n:foreach="$branch as $key => $leaf">
+		{if is_array($leaf)}
+			<li>
+				<h{!$level}>{_$prefix.'.'.$key.'.title'}</h{!$level}>
+			</li>
+			{include loop, level => $level+1, prefix => $prefix.'.'.$key, branch => $leaf}
+		{else}
+			<li>
+				<a href="{plink $leaf}">{_$prefix.'.'.$key.'.title'}</a>
+			</li>
+		{/if}
+	</ul>
+</div>

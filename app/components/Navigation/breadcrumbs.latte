@@ -1,0 +1,6 @@
+{block crumb|strip}
+<ol class="breadcrumb" n:inner-foreach="$crumbs as $dest => $title">
+	<li n:class="$iterator->last ? active">
+		<a n:tag-if="$iterator->first" href="{plink :$dest:}">{_'front.navigation.'.$title.'.title'}</a>
+	</li>
+</ol>

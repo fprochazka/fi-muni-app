@@ -24,6 +24,17 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 
 
 	/**
+	 * @param INavigationControlFactory $factory
+	 * @return \App\Navigation\NavigationControl
+	 */
+	protected function createComponentNavigation(INavigationControlFactory $factory)
+	{
+		return $factory->create();
+	}
+
+
+
+	/**
 	 * @return \WebLoader\Nette\JavaScriptLoader
 	 */
 	protected function createComponentJs()
