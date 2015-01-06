@@ -32,6 +32,14 @@
 	</div>
 
 	{block scripts}
+		<script type="text/x-mathjax-config" n:syntax="off">
+			MathJax.Hub.Config({
+				tex2jax: {
+					inlineMath: []
+				}
+			});
+		</script>
+
 		{control js}
 	{/block}
 </body>
