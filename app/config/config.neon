@@ -34,13 +34,9 @@ services:
 	routerFactory: App\RouterFactory(%productionMode%)
 	router: @routerFactory::create()
 
-	nette.latte:
-		setup:
-			- setAutoRefresh(TRUE)
-
-	nette.latteFactory:
-		setup:
-			- setAutoRefresh(TRUE)
+	robotLoader: Nette\Loaders\RobotLoader()
+	nette.latte: {setup: [setAutoRefresh(TRUE)]}
+	nette.latteFactory: {setup: [setAutoRefresh(TRUE)]}
 
 
 includes:
