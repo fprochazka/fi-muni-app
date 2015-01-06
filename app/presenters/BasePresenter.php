@@ -2,8 +2,9 @@
 
 namespace App\Presenters;
 
-use Nette,
-	App\Model;
+use App\Navigation\INavigationControlFactory;
+use Kdyby\Autowired\AutowireComponentFactories;
+use Nette;
 
 
 /**
@@ -11,6 +12,8 @@ use Nette,
  */
 abstract class BasePresenter extends Nette\Application\UI\Presenter
 {
+
+	use AutowireComponentFactories;
 
 	/**
 	 * @var \WebLoader\Nette\LoaderFactory

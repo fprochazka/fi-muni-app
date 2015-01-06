@@ -15,7 +15,9 @@
         "nette/nette": "~2.2.0",
         "fprochazka/fi-math": "dev-mathlib",
         "janmarek/webloader": "dev-master",
-        "oyejorge/less.php": "~1.7"
+        "oyejorge/less.php": "~1.7",
+        "kdyby/autowired": "~1.2",
+        "kdyby/translation": "dev-master"
     },
     "require-dev": {
         "nette/tester": "~1.0"
